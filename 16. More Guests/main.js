@@ -4,12 +4,11 @@
 // • Add one new guest to the middle of your array.
 // • Use append() to add one new guest to the end of your list.
 // • Print a new set of invitation messages, one for each person in your list.
-
-let guests : string[] = ["Khurram", "Umair", "Umer"]
+var guests = ["Khurram", "Umair", "Umer"];
 console.log("Great news! I found a bigger dinner table.");
-guests.unshift("Uns")
-guests.splice(guests.length / 2, 0, "Rameez")
-guests.push("Hasnain")
-for (let i = 0; i < guests.length; i++) {
-    console.log(`Hello ${guests[i]},\nYou are cordially invited to dinner. It would be an honor to have you join us for an evening of stimulating conversation and delicious food.`);
+guests.unshift("Uns");
+guests.splice(guests.length / 2, 0, "Rameez");
+guests.push("Hasnain");
+for (var i = 0; i < guests.length; i++) {
+    console.log("Hello ".concat(guests[i], ",\nYou are cordially invited to dinner. It would be an honor to have you join us for an evening of stimulating conversation and delicious food."));
 }

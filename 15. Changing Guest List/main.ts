@@ -4,14 +4,13 @@
 // • Print a second set of invitation messages, one for each person who is still in your list.
 
 let guests : string[] = ["Khurram", "Jarry", "Umer"]
-for (let i = 0; i < guests.length; i++) {
-    console.log(`"Dear ${guests[i]},\nYou are cordially invited to dinner. It would be an honor to have you join us for an evening of stimulating conversation and delicious food.\n`);
-}
-
-let newGuests :string[] =["Khurram", "Umer", "Umair"]
-for (let i = 0; i < guests.length; i++) {
-    console.log(`"Dear ${newGuests[i]},\nYou are cordially invited to dinner. It would be an honor to have you join us for an evening of stimulating conversation and delicious food.\n`);
-}
 
 let absent_guest : string = "Jarry"
 console.log(`Mr ${absent_guest} will not make it to dinner.`);
+
+let newGuest :string = "Umair"
+guests[guests.indexOf(absent_guest)] = newGuest;
+
+for (let i = 0; i < guests.length; i++) {
+    console.log(`Dear ${guests[i]},\nYou are cordially invited to dinner. It would be an honor to have you join us for an evening of stimulating conversation and delicious food.`);
+}
