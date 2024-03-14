@@ -1,5 +1,5 @@
+"use strict";
 // 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
-
-let brothers : string[] = ["Kumail", "Ghazi", "Osaja", "Ijlan"]
+let brothers = ["Kumail", "Ghazi", "Osaja", "Ijlan"];
 console.log(brothers[4]);
 console.log(brothers[3]);
